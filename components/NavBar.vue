@@ -61,38 +61,38 @@
 			height: 100vh;
 			background-color: var(--background-color);
 			border-right: 1px solid #ccc;
-			width: 100px;
+			width: 120px;
 			color: var(--text-color);
 			;
 
 			.current-menu {
-				height: 60px;
-				padding: 20px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
 				box-sizing: border-box;
 				font-size: 14px;
 				border-bottom: 1px solid #ccc;
+				margin-bottom: 10px;
 			}
 
 			.sub-link {
-				margin: 10px auto;
-				text-align: center;
+				margin: 0px auto 6px;
 				font-size: 14px;
-				padding: 6px 6px;
+				padding: 8px 20px;
 				box-sizing: border-box;
 				width: calc(100% - 20px);
 				border-radius: 4px;
 				cursor: pointer;
 
-				&:hover,
-				&:active {
-					background-color: var(--primary-light);
-					color: white;
+				&:hover {
+					color: var(--primary-dark);
+					background-color: var(--primary-fade);
 				}
 			}
 		}
 
 		&-menus {
-			width: 80px;
+			width: 70px;
 			height: 100vh;
 			border-right: 1px solid #ccc;
 			background-color: #333;
@@ -101,12 +101,11 @@
 		}
 
 		&-logo {
-			height: 60px;
-			width: 80px;
+			height: 54px;
+			width: 70px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			border-bottom: 1px solid #ccc;
 
 			image {
 				height: 60%;
@@ -125,22 +124,25 @@
 		}
 
 		&-link {
-			width: 100%;
+			width: 50px;
+			height: 50px;
 			text-align: center;
 			font-size: 16px;
 			cursor: pointer;
 			display: flex;
 			flex-direction: column;
-			font-size: 14px;
+			font-size: 12px;
 			align-items: center;
 			justify-content: center;
-			padding: 10px 0;
+			padding: 0;
 			transition: .3s;
+			margin: 0 auto 10px;
+			border-radius: 4px;
 
 			image {
-				height: 24px;
-				width: 24px;
-				margin: 4px 0;
+				height: 16px;
+				width: 16px;
+				margin-bottom: 2px;
 			}
 
 			view {
@@ -164,12 +166,13 @@
 			z-index: 999;
 
 			.sub-menus {
-				width: 80px;
+				width: 160rpx;
 
 				.current-menu {
-					height: 40px;
-					padding: 12px;
-					font-size: 12px;
+					height: 80rpx;
+					padding: 12rpx;
+					font-size: 24rpx;
+					line-height: 50rpx;
 				}
 
 				.sub-link {
@@ -197,8 +200,10 @@
 
 			&-link {
 				text-align: left;
+				height: 60rpx;
 
 				view {
+					padding: 0;
 					padding-left: 10px;
 				}
 

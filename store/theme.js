@@ -16,9 +16,9 @@ export const useThemeStore = defineStore('theme', () => {
 		const baseColor = Color(color)
 		return {
 			primary: color,
-			'primary-light': baseColor.lighten(0.2).hex(),
-			'primary-dark': baseColor.darken(0.2).hex(),
-			'primary-fade': baseColor.alpha(0.2).hex(),
+			'primary-light': baseColor.lighten(0.2).rgb(),
+			'primary-dark': baseColor.darken(0.2).rgb(),
+			'primary-fade': baseColor.alpha(0.2).rgb(),
 		}
 	}
 	const RootStyles = ref("")

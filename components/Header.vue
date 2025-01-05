@@ -37,7 +37,7 @@
 
 <style lang="scss">
 	.header {
-		height: 60px;
+		height: 50px;
 		width: 100%;
 		border-bottom: 1px solid #ccc;
 		display: flex;
@@ -50,8 +50,8 @@
 		&-control {}
 
 		&-avatar {
-			height: 40px;
-			width: 40px;
+			height: 32px;
+			width: 32px;
 			background-color: var(--primary);
 			border-radius: 50%;
 			overflow: hidden;
